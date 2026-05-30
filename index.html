@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Opening Section -->
+    <section id="opening" class="section opening-section">
+        <div class="opening-content">
+            <div class="opening-decoration top-decoration">✿</div>
+            <h1 class="opening-title">Dengan Ini Kami Mengundang</h1>
+            <p class="opening-subtitle">Anda untuk hadir merayakan pernikahan kami</p>
+            <div class="couple-names">
+                <h2>Nama Mempelai Pria</h2>
+                <p>&</p>
+                <h2>Nama Mempelai Wanita</h2>
+            </div>
+            <button id="openBtn" class="btn-open">Buka Undangan</button>
+            <div class="opening-decoration bottom-decoration">✿</div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="hidden">
+        <!-- Couple Section -->
+        <section id="couple" class="section couple-section">
+            <div class="couple-header">
+                <h2>Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+            </div>
+            <div class="couple-info">
+                <div class="groom">
+                    <img src="images/groom.jpg" alt="Mempelai Pria" class="couple-photo">
+                    <h3>Nama Mempelai Pria</h3>
+                    <p>Putra dari Bapak .... dan Ibu ....</p>
+                </div>
+                <div class="couple-divider">
+                    <p class="love-symbol">💕</p>
+                </div>
+                <div class="bride">
+                    <img src="images/bride.jpg" alt="Mempelai Wanita" class="couple-photo">
+                    <h3>Nama Mempelai Wanita</h3>
+                    <p>Putri dari Bapak .... dan Ibu ....</p>
+                </div>
+            </div>
+            <p class="couple-quote">
+                "Semoga pernikahan kami menjadi awal dari kehidupan yang lebih bermakna dan penuh berkah dari Allah SWT"
+            </p>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="section countdown-section">
+            <h2>Menghitung Hari</h2>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days" class="countdown-value">0</span>
+                    <p class="countdown-label">Hari</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours" class="countdown-value">0</span>
+                    <p class="countdown-label">Jam</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes" class="countdown-value">0</span>
+                    <p class="countdown-label">Menit</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds" class="countdown-value">0</span>
+                    <p class="countdown-label">Detik</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acara Section -->
+        <section id="acara" class="section acara-section">
+            <h2>Acara Kami</h2>
+            <div class="event-details">
+                <div class="event">
+                    <div class="event-icon">📿</div>
+                    <h3>Akad Nikah</h3>
+                    <p class="event-date">📅 Sabtu, 15 Juni 2024</p>
+                    <p class="event-time">⏰ 10:00 - 11:30 WIB</p>
+                    <p class="event-location">📍 Masjid Al-Falah, Surabaya</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-map">Buka Google Maps</a>
+                </div>
+                <div class="event">
+                    <div class="event-icon">🎉</div>
+                    <h3>Resepsi</h3>
+                    <p class="event-date">📅 Sabtu, 15 Juni 2024</p>
+                    <p class="event-time">⏰ 12:00 - 17:00 WIB</p>
+                    <p class="event-location">📍 Ballroom Hotel Grand Surabaya</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn-map">Buka Google Maps</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section gallery-section">
+            <h2>Galeri Kami</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/gallery/photo1.jpg" alt="Photo 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/photo2.jpg" alt="Photo 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/photo3.jpg" alt="Photo 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/photo4.jpg" alt="Photo 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/photo5.jpg" alt="Photo 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/photo6.jpg" alt="Photo 6">
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="section rsvp-section">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p class="rsvp-subtitle">Mohon untuk mengisi form di bawah ini sebelum tanggal 10 Juni 2024</p>
+            <form id="rsvpForm" class="rsvp-form">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        name="nama" 
+                        placeholder="Nama Anda" 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email Anda" 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="tel" 
+                        name="phone" 
+                        placeholder="Nomor Telepon Anda" 
+                    >
+                </div>
+                <div class="form-group">
+                    <select name="kehadiran" required>
+                        <option value="">Apakah Anda Hadir?</option>
+                        <option value="hadir">Hadir</option>
+                        <option value="tidak">Tidak Hadir</option>
+                        <option value="ragu">Ragu-ragu</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input 
+                        type="number" 
+                        name="jumlah_tamu" 
+                        min="1" 
+                        max="5"
+                        placeholder="Jumlah Tamu (termasuk diri sendiri)"
+                    >
+                </div>
+                <div class="form-group">
+                    <textarea 
+                        name="ucapan" 
+                        placeholder="Ucapan dan Doa untuk pasangan"
+                        rows="4"
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim RSVP</button>
+            </form>
+        </section>
+
+        <!-- Music Control Section -->
+        <section id="music-control" class="music-control">
+            <button id="musicBtn" class="btn-music" title="Toggle Music">
+                <span>🎵 Putar Musik</span>
+            </button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Terima kasih atas doa dan restu Anda untuk pernikahan kami</p>
+            <p>Made with ❤️ | &copy; 2024</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
